@@ -9,7 +9,7 @@ Summary:	%{_pearname} - utility class for dealing with MIME types
 Summary(pl):	%{_pearname} - przydatna klasa do obs³ugi typów MIME
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	0.%{_extraver}.1
+Release:	0.%{_extraver}.2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_extraver}.tgz
@@ -49,9 +49,10 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
-install %{_pearname}-%{version}%{_extraver}/{Parameter,Type}.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}%{_extraver}/Type.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}%{_extraver}/Parameter.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -60,3 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}%{_extraver}/example.php
 %{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/%{_class}/%{_subclass}
