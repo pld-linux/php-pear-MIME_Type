@@ -1,0 +1,2 @@
+- install Parameter.php in %{php_pear_dir}/MIME/Type
+- release .2
