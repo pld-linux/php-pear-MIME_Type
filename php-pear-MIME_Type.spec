@@ -16,7 +16,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/MIME_Type/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
-Requires:	php-pear-PEAR >= 1:1.2.1
+Requires:	php-pear-PEAR-core >= 1:1.2.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,8 +39,8 @@ Klasa dostarcza funkcjonalno¶ci do obs³ugi typów MIME:
 - wiele przydatnych funkcji do obs³ugi i okre¶lania informacji na
   temat typów
 - wiêkszo¶æ funkcji mo¿e byæ wywo³ana statycznie
-- autodetekecja typu MIME pliku, za pomoc± mime_content_type() lub
-  z wykorzystaniem polecenia 'file'.
+- autodetekecja typu MIME pliku, za pomoc± mime_content_type() lub z
+  wykorzystaniem polecenia 'file'.
 
 Ta klasa ma w PEAR status: %{_status}.
 
