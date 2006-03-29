@@ -8,7 +8,7 @@ Summary:	%{_pearname} - utility class for dealing with MIME types
 Summary(pl):	%{_pearname} - przydatna klasa do obs³ugi typów MIME
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
