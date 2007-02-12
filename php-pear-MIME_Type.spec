@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - utility class for dealing with MIME types
-Summary(pl):	%{_pearname} - przydatna klasa do obs≥ugi typÛw MIME
+Summary(pl.UTF-8):   %{_pearname} - przydatna klasa do obs≈Çugi typ√≥w MIME
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 Release:	3
@@ -34,14 +34,14 @@ Provides functionality for dealing with MIME types.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasa dostarcza funkcjonalno∂ci do obs≥ugi typÛw MIME:
+%description -l pl.UTF-8
+Klasa dostarcza funkcjonalno≈õci do obs≈Çugi typ√≥w MIME:
 - przetwarzanie typu MIME,
-- pe≥na obs≥uga specyfikacji RFC2045
-- wiele przydatnych funkcji do obs≥ugi i okre∂lania informacji na
-  temat typÛw
-- wiÍkszo∂Ê funkcji moøe byÊ wywo≥ana statycznie
-- autodetekecja typu MIME pliku, za pomoc± mime_content_type() lub z
+- pe≈Çna obs≈Çuga specyfikacji RFC2045
+- wiele przydatnych funkcji do obs≈Çugi i okre≈õlania informacji na
+  temat typ√≥w
+- wiƒôkszo≈õƒá funkcji mo≈ºe byƒá wywo≈Çana statycznie
+- autodetekecja typu MIME pliku, za pomocƒÖ mime_content_type() lub z
   wykorzystaniem polecenia 'file'.
 
 Ta klasa ma w PEAR status: %{_status}.
