@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - utility class for dealing with MIME types
 Summary(pl.UTF-8):	%{_pearname} - przydatna klasa do obsługi typów MIME
 Name:		php-pear-%{_pearname}
-Version:	1.0.0
-Release:	4
+Version:	1.1.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	dc2d377a121c6410d5f5c46e8ec32c03
+# Source0-md5:	d42d13f514f6e1daf148703540fc3bec
 URL:		http://pear.php.net/package/MIME_Type/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -46,6 +46,20 @@ Klasa dostarcza funkcjonalności do obsługi typów MIME:
 
 Ta klasa ma w PEAR status: %{_status}.
 
+%package tests
+Summary:	Tests for PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
+Group:		Development/Languages/PHP
+AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
+AutoProv:	no
+
+%description tests
+Tests for PEAR::%{_pearname}.
+
+%description tests -l pl.UTF-8
+Testy dla PEAR::%{_pearname}.
+
 %prep
 %pear_package_setup
 
@@ -61,9 +75,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc install.log optional-packages.txt
-%doc docs/%{_pearname}/example.php
+%doc install.log optional-packages.txt docs/examples
 %{php_pear_dir}/.registry/*.reg
 %dir %{php_pear_dir}/%{_class}
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}
+
+%files tests
+%defattr(644,root,root,755)
+%{php_pear_dir}/tests/%{_pearname}
