@@ -4,12 +4,12 @@
 Summary:	%{_pearname} - utility class for dealing with MIME types
 Summary(pl.UTF-8):	%{_pearname} - przydatna klasa do obsługi typów MIME
 Name:		php-pear-%{_pearname}
-Version:	1.3.4
+Version:	1.3.5
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	538eab2fabc0ad61f48e141cd5f71c86
+# Source0-md5:	8bfe6263e36535b62e7b8f9dd60e315a
 URL:		http://pear.php.net/package/MIME_Type/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
