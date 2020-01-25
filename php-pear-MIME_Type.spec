@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		stable
 %define		_pearname	MIME_Type
 Summary:	%{_pearname} - utility class for dealing with MIME types
